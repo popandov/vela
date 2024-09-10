@@ -1,0 +1,67 @@
+import { TFunction } from 'i18next';
+import { useTranslation } from 'react-i18next';
+import { FaRegCheckCircle } from 'react-icons/fa';
+import { IoInformationCircleOutline } from 'react-icons/io5';
+import { Image, Stack, VStack, Text, HStack, Icon } from '@chakra-ui/react';
+
+import storageImage from '/images/photo_08.jpg';
+import { useMemo } from 'react';
+import MainContentTitle from './MainContentTitlte';
+
+const getInformationList = (t: TFunction<'translation', undefined>) => [
+  { description: t('4coolingChambers') },
+  { description: t('roomForProduction') },
+  { description: t('calibrationRoom') },
+  { description: t('offices') },
+  { description: t('goodsReception') },
+  { description: t('storageSpace') },
+  { description: t('otherRooms') },
+];
+
+const ColdStorage = () => {
+  const { t } = useTranslation();
+
+  const informationList = useMemo(() => getInformationList(t), [t]);
+
+  return (
+    <VStack alignItems='flex-start'>
+      <MainContentTitle title={t('info')} icon={IoInformationCircleOutline} />
+      <Stack direction={{ base: 'column', lg: 'row' }} w='full'>
+        <Image w='full' src={storageImage} minW={0} />
+        <VStack
+          color='black'
+          gap={{ base: 4 }}
+          alignItems='start'
+          fontSize={{ base: '16px' }}
+          lineHeight={{ base: '19px' }}
+        >
+          <Text pl={{ base: 0, lg: '1.5em' }}>{t('buildingLocationDescription')}</Text>
+          <Text pl={{ base: 0, lg: '1.5em' }}>{t('buildingStructureDescription')}</Text>
+          <Text pl={{ base: 0, lg: '1.5em' }}>
+            {t('buidlingRoomsListings')}{' '}
+            <Text as='span' fontWeight={700}>
+              {t('severalRooms')}
+            </Text>
+          </Text>
+          <VStack alignItems='start'>
+            {informationList.map(({ description }) => (
+              <HStack>
+                <Icon color='gray.500' as={FaRegCheckCircle} />
+                <Text>{description}</Text>
+              </HStack>
+            ))}
+          </VStack>
+          <Text pl={{ base: 0, lg: '1.5em' }}>{t('totalAreaDescription')}</Text>
+          <Text fontWeight={700} pl={{ base: 0, md: '1.5em' }}>
+            {t('yardDescription')}
+          </Text>
+          <Text fontWeight={700} pl={{ base: 0, md: '1.5em' }}>
+            {t('powerInBuildingDescription')}
+          </Text>
+        </VStack>
+      </Stack>
+    </VStack>
+  );
+};
+
+export default ColdStorage;
