@@ -2,11 +2,11 @@ import { HStack, Icon, Text } from '@chakra-ui/react';
 import { IconType } from 'react-icons';
 
 interface Props {
-    icon: IconType;
-    title: string;
+  icon: IconType;
+  title: string;
 }
 
-const MainContentTitle = ({icon, title}: Props) => {
+const MainContentTitle = ({ icon, title }: Props) => {
   return (
     <HStack color='gray.500'>
       <Icon width={{ base: '24px' }} height={{ base: '24px' }} as={icon} />

@@ -31,6 +31,24 @@
   "totalAreaDescription": "The total area of the facillity is 2870 m²",
   "yardDescription": "It also includes a yard of 18,655 m² equipped with video surveillance.",
   "powerInBuildingDescription": "The entire building is powered by a transformer with a capacity of 250 kW.",
-  "info": "general info"
-
+  "info": "general info",
+  "rooms": "rooms",
+  "coolingChambers": "COOLING CHAMBERS",
+  "eachChamberIsEquipped": "Each chamber is equipped with two",
+  "bitzer": "BITZER",
+  "motorsOf15KW": "motors of 15 kW (German origin) and two evaporators.",
+  "chambersAreConstructedWithPanels": "The chambers are constructed with panels that are either 10 cm or 12 cm thick.",
+  "chamberSizeOne": "16,5m х 12m х 5m = 990m3 or 198m2",
+  "chamberSizeTwo": "24m х 12m х 4m = 1152m3 or 288m2",
+  "chamberSizeThree": "24m х 12m х 4m = 1152m3 or 288m2",
+  "chamberSizeFour": "24m х 12m х 4m = 1152m3 or 288m2",
+  "totalSize": "Total:  4446m3 or 1056m2",
+  "fruitsAndVegetablesProcessing": "Fruits and vegetables processing",
+  "calibration": "calibration",
+  "theFollowingRoomHasTheDimensions": "The following room has the dimensions:",
+  "fruitsAndVegetablesDimensions": "15,5m х 31m х 6m = 2883m3 или 480,5m2",
+  "callibrationRoomDimensions": "15,5m х 31m х 4m = 1922m3 или 480,5m2",
+  "officesDimensionsOne": "3,2м х 3,5м = 11,2м2",
+  "officesDimensionsTwo": "4м х 3,5 = 14м2",
+  "totalAreaOfOtherRooms": "Total area of 828m2"
 }

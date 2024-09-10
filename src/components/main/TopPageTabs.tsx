@@ -1,8 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import { FaRegSnowflake } from 'react-icons/fa';
 import { HiOutlineArchiveBox } from 'react-icons/hi2';
-import { Box, Icon, Tab, TabList, TabPanel, TabPanels, TabProps, Tabs, useToken } from '@chakra-ui/react';
+import { Box, Icon, Tab, TabList, TabPanel, TabPanels, TabProps, Tabs, useToken, VStack } from '@chakra-ui/react';
 import ColdStorage from './ColdStorage';
+import Rooms from './Rooms';
 
 const sharedStyled: TabProps = {
   gap: 2,
@@ -23,7 +24,6 @@ const TopPageTabs = () => {
   return (
     <Tabs orientation='horizontal' width='full' overflow='auto' paddingX={{ base: '10px', lg: '50px' }}>
       <TabList
-        gap={0}
         bg='white'
         zIndex={200}
         color='gray.500'
@@ -44,7 +44,10 @@ const TopPageTabs = () => {
       </TabList>
       <TabPanels>
         <TabPanel bg='gray.200' borderRadius='5px'>
-          <ColdStorage />
+          <VStack spacing={{ base: 9 }}>
+            <ColdStorage />
+            <Rooms />
+          </VStack>
         </TabPanel>
         <TabPanel>haha world</TabPanel>
       </TabPanels>

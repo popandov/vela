@@ -11,8 +11,8 @@ import MainContentTitle from './MainContentTitlte';
 const getInformationList = (t: TFunction<'translation', undefined>) => [
   { description: t('4coolingChambers') },
   { description: t('roomForProduction') },
-  { description: t('calibrationRoom') },
-  { description: t('offices') },
+  { description: `${t('calibrationRoom')},` },
+  { description: `${t('offices')},` },
   { description: t('goodsReception') },
   { description: t('storageSpace') },
   { description: t('otherRooms') },
@@ -51,11 +51,13 @@ const ColdStorage = () => {
               </HStack>
             ))}
           </VStack>
-          <Text pl={{ base: 0, lg: '1.5em' }}>{t('totalAreaDescription')}</Text>
-          <Text fontWeight={700} pl={{ base: 0, md: '1.5em' }}>
+          <Text pl={{ base: 0, lg: '1.5em' }} textAlign={{ base: 'start' }}>
+            {t('totalAreaDescription')}
+          </Text>
+          <Text fontWeight={700} pl={{ base: 0, lg: '1.5em' }} textAlign={{ base: 'start' }}>
             {t('yardDescription')}
           </Text>
-          <Text fontWeight={700} pl={{ base: 0, md: '1.5em' }}>
+          <Text fontWeight={700} pl={{ base: 0, lg: '1.5em' }} textAlign={{ base: 'start' }}>
             {t('powerInBuildingDescription')}
           </Text>
         </VStack>

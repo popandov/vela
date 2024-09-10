@@ -11,7 +11,7 @@ export const velaTradeTheme = extendTheme({
     gray: {
       200: 'rgba(204, 221, 226, .24)',
       500: 'rgba(147, 169, 178, 1)',
-      600: 'rgba(152, 162, 179, 1)'
+      600: 'rgba(152, 162, 179, 1)',
     },
     green: {
       50: '#F8FFFB',
@@ -51,7 +51,7 @@ export const velaTradeTheme = extendTheme({
   components,
   styles: {
     global: {
-      body: {
+      'body': {
         '-ms-overflow-style': 'none',
         'scrollbar-width': 'none',
       },

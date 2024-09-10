@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { HStack, Image, VStack } from '@chakra-ui/react';
 
 import initialImage from '/images/photo_02_main.jpg';
@@ -8,24 +9,18 @@ import photo25 from '/images/photo_25.jpg';
 import photo09 from '/images/photo_09.jpg';
 import photo33 from '/images/photo_33.jpg';
 import photo32 from '/images/photo_32.jpg';
-import { useState } from 'react';
 
 const smallerImages = [photo24, photo20, photo21, photo25, photo09, photo33, photo32];
 
 const ImageContainer = () => {
-  const [selectedImage, setSelectedImage] = useState(initialImage)
+  const [selectedImage, setSelectedImage] = useState(initialImage);
   const handleImageClick = (image: string) => {
-    setSelectedImage(image)
+    setSelectedImage(image);
   };
 
   return (
     <VStack>
-      <Image
-        minW={0}
-        width='full'
-        src={selectedImage}
-        borderRadius='5px'
-      />
+      <Image minW={0} width='full' src={selectedImage} borderRadius='5px' />
       <HStack overflow='auto' w='full'>
         {smallerImages.map((item) => (
           <Image key={item} w='full' src={item} onClick={() => handleImageClick(item)} borderRadius='5px' />
