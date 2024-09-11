@@ -24,7 +24,7 @@ const TopSection = () => {
             fontWeight={400}
             fontSize={{ base: '40px', lg: '60px' }}
             lineHeight={{ base: '48px', lg: '72px' }}
-            width={{ base: 'fit-content', lg: '300px' }}
+            width={{ base: 'fit-content', lg: '320px' }}
           >
             {t('companyName').toUpperCase()}
           </Text>
