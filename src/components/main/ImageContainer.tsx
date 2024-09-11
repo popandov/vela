@@ -29,8 +29,8 @@ const ImageContainer = () => {
             key={item}
             w='full'
             src={item}
-            onClick={() => handleImageClick(item)}
             borderRadius='5px'
+            onClick={() => handleImageClick(item)}
           />
         ))}
       </HStack>

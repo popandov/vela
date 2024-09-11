@@ -65,7 +65,7 @@ const Machines = () => {
   const panels = useMemo(() => getMachinePanels(t), [t]);
 
   return (
-    <Tabs>
+    <Tabs w='full'>
       <Stack direction={{ base: 'column', lg: 'row' }} w='full' gap={{ base: 2, lg: 5 }}>
         <MainContentTitle
           icon={AiOutlineSetting}
@@ -73,12 +73,11 @@ const Machines = () => {
           fontSize={{ base: '22px' }}
           lineHeight={{ base: '26px' }}
         />
-        <TabList overflowX='auto' paddingBottom={{ base: 4 }} w='full'>
+        <TabList alignSelf='center' overflowX='auto' paddingBottom={{ base: 4 }} w={{base: '86vw', md: 'full', lg: 'full'}}>
           {tabs.map((tab) => (
             <Tab
               w='full'
               key={tab}
-              paddingX={0}
               color='gray.500'
               minW='fit-content'
               fontSize={{ base: '18px' }}

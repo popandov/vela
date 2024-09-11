@@ -12,7 +12,6 @@ const TopSection = () => {
     <Stack
       w='full'
       paddingX={2}
-      marginBottom={50}
       alignItems='center'
       direction={{ base: 'column', lg: 'row' }}
       borderX={{ base: `10px solid ${red700}`, lg: `50px solid ${red700}` }}

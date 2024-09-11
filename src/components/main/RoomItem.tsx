@@ -19,17 +19,18 @@ const RoomItem = ({ content, images, title, isCurrentItemSelected }: Props) => {
       <AccordionButton
         width='full'
         color='black'
-        paddingX='9px'
+        paddingX={0}
         paddingY='16px'
         justifyContent='space-between'
         fontSize={{ base: '18px' }}
         lineHeight={{ base: '24px' }}
+        _hover={{backgroundColor: 'none'}}
         fontWeight={{ base: isCurrentItemSelected ? 600 : 400 }}
       >
         <Text textAlign='start'>{title.toUpperCase()}</Text>
         <Icon color={isCurrentItemSelected ? 'black' : 'gray.500'} as={isCurrentItemSelected ? FaMinus : FaPlus} />
       </AccordionButton>
-      <AccordionPanel>
+      <AccordionPanel px={0}>
         <VStack gap={{ base: '12px' }} spacing={8}>
           {content}
           {isMobile && images}

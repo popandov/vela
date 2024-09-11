@@ -46,7 +46,7 @@ const TopPageTabs = () => {
           {t('warehouse')}
         </Tab>
       </TabList>
-      <TabPanels>
+      <TabPanels pt={8}>
         <TabPanel bg='gray.200' borderRadius='5px'>
           <VStack spacing={{ base: 12 }}>
             <ColdStorage />

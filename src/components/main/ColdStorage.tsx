@@ -50,7 +50,7 @@ const ColdStorage = () => {
           </Text>
           <VStack alignItems='start' fontSize={{ base: '16px' }} lineHeight={{ base: '19px' }}>
             {informationList.map(({ description }) => (
-              <HStack>
+              <HStack key={description}>
                 <Icon color='gray.500' as={FaRegCheckCircle} />
                 <Text>{description}</Text>
               </HStack>
