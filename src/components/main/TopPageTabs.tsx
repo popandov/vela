@@ -5,6 +5,7 @@ import { Box, Icon, Tab, TabList, TabPanel, TabPanels, TabProps, Tabs, useToken,
 import ColdStorage from './ColdStorage';
 import Rooms from './Rooms';
 import Machines from './Machines';
+import OtherActivities from './OtherActivities';
 
 const sharedStyled: TabProps = {
   gap: 2,
@@ -49,6 +50,7 @@ const TopPageTabs = () => {
             <ColdStorage />
             <Rooms />
             <Machines />
+            <OtherActivities />
           </VStack>
         </TabPanel>
         <TabPanel>haha world</TabPanel>

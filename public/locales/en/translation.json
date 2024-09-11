@@ -62,5 +62,10 @@
   "calibratorTitle": "CALIBRATOR FOR THE CALIBRATION OF FRUITS AND VEGETABLES",
   "calibratorDescription": "In another room, there is a calibrator for the calibration of fruits and vegetables with a capacity of 5 tons per hour. The calibrator originates from Greece.",
   "packagingInProductsTitle": "PACKING MACHINE - KUPAKI",
-  "packagingInProductsDescription": "In the same room, there is a smaller machine used for packing products in 1kg plastic containers, called Kupaki."
+  "packagingInProductsDescription": "In the same room, there is a smaller machine used for packing products in 1kg plastic containers, called Kupaki.",
+  "otherActivities": "other activities",
+  "forkliftsTitle": "FORKLIFTS",
+  "forkliftsDescription": "The facility has 11 forklifts, including 3 electric ones with a capacity of 2 tons, 7 manual ones, and 1 electric manual one with a capacity of 1 ton.",
+  "scaleTitle": "scale",
+  "scaleDescription": "A scale with capaciy of 2 tons."
 }

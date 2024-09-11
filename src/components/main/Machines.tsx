@@ -6,6 +6,8 @@ import { Tabs, TabList, Text, Image, TabPanels, Tab, TabPanel, Stack, VStack, Bo
 import pureeProductionImage from '/images/photo_machines_19.jpg';
 import calibratorImage from '/images/photo_machines_27.jpg';
 import packagingInProductsImage from '/images/photo_machines_29.jpg';
+import MainContentTitle from './MainContentTitlte';
+import { AiOutlineSetting } from 'react-icons/ai';
 
 const getMachineTabs = (t: TFunction<'translation', undefined>): string[] => [
   t('pureeProduction'),
@@ -64,23 +66,31 @@ const Machines = () => {
 
   return (
     <Tabs>
-      <TabList overflowX='auto' paddingBottom={{ base: 4 }}>
-        {tabs.map((tab) => (
-          <Tab
-            w='full'
-            key={tab}
-            paddingX={0}
-            color='gray.500'
-            minW='fit-content'
-            fontSize={{ base: '18px' }}
-            lineHeight={{ base: '28px' }}
-            borderBottom={`2px solid ${gray500}`}
-            _selected={{ fontWeight: 700, color: 'black', borderBottom: `2px solid ${gray500}` }}
-          >
-            {tab}
-          </Tab>
-        ))}
-      </TabList>
+      <Stack direction={{ base: 'column', lg: 'row' }} w='full' gap={{base: 2, lg: 5}}>
+        <MainContentTitle
+          icon={AiOutlineSetting}
+          title={t('machines')}
+          fontSize={{ base: '22px' }}
+          lineHeight={{ base: '26px' }}
+        />
+        <TabList overflowX='auto' paddingBottom={{ base: 4 }} w='full'>
+          {tabs.map((tab) => (
+            <Tab
+              w='full'
+              key={tab}
+              paddingX={0}
+              color='gray.500'
+              minW='fit-content'
+              fontSize={{ base: '18px' }}
+              lineHeight={{ base: '28px' }}
+              borderBottom={`2px solid ${gray500}`}
+              _selected={{ fontWeight: 700, color: 'black', borderBottom: `2px solid ${gray500}` }}
+            >
+              {tab}
+            </Tab>
+          ))}
+        </TabList>
+      </Stack>
 
       <TabPanels w='full'>
         {panels.map((panel, index) => (
