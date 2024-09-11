@@ -15,10 +15,12 @@ const RoomItem = ({ content, images, title, isCurrentItemSelected }: Props) => {
   const isMobile = useIsMobile();
 
   return (
-    <AccordionItem gap={{ base: '12px' }} w='full' padding='9px 16px 9px 16px'>
+    <AccordionItem gap={{ base: '12px' }} w='full'>
       <AccordionButton
         width='full'
         color='black'
+        paddingX='9px'
+        paddingY='16px'
         justifyContent='space-between'
         fontSize={{ base: '18px' }}
         lineHeight={{ base: '24px' }}

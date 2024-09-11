@@ -4,6 +4,7 @@ import { HiOutlineArchiveBox } from 'react-icons/hi2';
 import { Box, Icon, Tab, TabList, TabPanel, TabPanels, TabProps, Tabs, useToken, VStack } from '@chakra-ui/react';
 import ColdStorage from './ColdStorage';
 import Rooms from './Rooms';
+import Machines from './Machines';
 
 const sharedStyled: TabProps = {
   gap: 2,
@@ -22,7 +23,7 @@ const TopPageTabs = () => {
   const [gray500] = useToken('colors', ['gray.500']);
 
   return (
-    <Tabs orientation='horizontal' width='full' overflow='auto' paddingX={{ base: '10px', lg: '50px' }}>
+    <Tabs orientation='horizontal' width='full' paddingX={{ base: '10px', lg: '50px' }}>
       <TabList
         bg='white'
         zIndex={200}
@@ -47,6 +48,7 @@ const TopPageTabs = () => {
           <VStack spacing={{ base: 9 }}>
             <ColdStorage />
             <Rooms />
+            <Machines />
           </VStack>
         </TabPanel>
         <TabPanel>haha world</TabPanel>

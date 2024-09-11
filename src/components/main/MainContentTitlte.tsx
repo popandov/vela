@@ -1,4 +1,4 @@
-import { HStack, Icon, Text } from '@chakra-ui/react';
+import { HStack, Icon, Text, TextProps } from '@chakra-ui/react';
 import { IconType } from 'react-icons';
 
 interface Props {
@@ -6,11 +6,11 @@ interface Props {
   title: string;
 }
 
-const MainContentTitle = ({ icon, title }: Props) => {
+const MainContentTitle = ({ icon, title, ...textProps }: Props & TextProps) => {
   return (
     <HStack color='gray.500'>
       <Icon width={{ base: '24px' }} height={{ base: '24px' }} as={icon} />
-      <Text fontSize={{ base: '18px' }} fontWeight={{ base: 400 }} lineHeight={{ base: '22px' }}>
+      <Text fontSize={{ base: '18px' }} fontWeight={{ base: 400 }} lineHeight={{ base: '22px' }} {...textProps}>
         {title.toUpperCase()}
       </Text>
     </HStack>

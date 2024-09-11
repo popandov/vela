@@ -50,5 +50,17 @@
   "callibrationRoomDimensions": "15,5m х 31m х 4m = 1922m3 или 480,5m2",
   "officesDimensionsOne": "3,2м х 3,5м = 11,2м2",
   "officesDimensionsTwo": "4м х 3,5 = 14м2",
-  "totalAreaOfOtherRooms": "Total area of 828m2"
+  "totalAreaOfOtherRooms": "Total area of 828m2",
+  "pureeProduction": "Puree production",
+  "calibrator": "Calibrator",
+  "machines": "MACHINES",
+  "packagingInProducts": "Packaging in products",
+  "pureeProductionTitle": "PRODUCTION LINE FOR PRODUCTION OF PUREE FROM FRUITS AND VEGETABLES",
+  "pureeProductionDescriptionOne": "Within the facility, there is a ",
+  "pureeProductionDescriptionTwo": "production line for producing puree from fruits and vegetables ",
+  "pureeProductionDesceriptionThree": "with a capacity of 15 tons of finished product in 8 hours. The entire technology for producing fruit and vegetable puree originates from Slovenia.",
+  "calibratorTitle": "CALIBRATOR FOR THE CALIBRATION OF FRUITS AND VEGETABLES",
+  "calibratorDescription": "In another room, there is a calibrator for the calibration of fruits and vegetables with a capacity of 5 tons per hour. The calibrator originates from Greece.",
+  "packagingInProductsTitle": "PACKING MACHINE - KUPAKI",
+  "packagingInProductsDescription": "In the same room, there is a smaller machine used for packing products in 1kg plastic containers, called Kupaki."
 }

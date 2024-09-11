@@ -201,7 +201,12 @@ const Rooms = () => {
 
   return (
     <VStack w='full' alignItems='start'>
-      <MainContentTitle title={t('offices')} icon={BiMapAlt} />
+      <MainContentTitle
+        icon={BiMapAlt}
+        title={t('rooms')}
+        fontSize={{ base: '22px' }}
+        lineHeight={{ base: '26px' }}
+      />
       <Stack direction={{ base: 'column', lg: 'row' }} w='full'>
         <Accordion onChange={(item) => setSelectedIndex(item as number)} defaultIndex={0} w='full'>
           {items.map((room, index) => (

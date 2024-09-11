@@ -50,5 +50,17 @@
   "callibrationRoomDimensions": "15,5m х 31m х 4m = 1922m3 или 480,5m2",
   "officesDimensionsOne": "3,2м х 3,5м = 11,2м2",
   "officesDimensionsTwo": "4м х 3,5 = 14м2",
-  "totalAreaOfOtherRooms": "Вкупна површина од 828м2"
+  "totalAreaOfOtherRooms": "Вкупна површина од 828м2",
+  "pureeProduction": "Производство на пире",
+  "calibrator": "Калибратор",
+  "machines": "машини",
+  "packagingInProducts": "Пакување на производи",
+  "pureeProductionTitle": "ПРОИЗВОДНА ЛИНИЈА ЗА ПРОИЗВОДСТВО НА ПИРЕ ОД ОВОШЈЕ И ЗЕЛЕНЧУК",
+  "pureeProductionDescriptionOne": "Во склоп на објектот има ",
+  "pureeProductionDescriptionTwo": "производна линија за производство на пире од овошје и зеленчук ",
+  "pureeProductionDescriptionThree": "со капацитет од 15т на готов производ за 8 часа. Целата технологија за производство на пире од овошје и зеленчук е со потекло од Словенија",
+  "calibratorTitle": "КАЛИБРАТОР ЗА КАЛИБРИРАЊЕ НА ОВОШЈЕ И ЗЕЛЕНЧУК",
+  "calibratorDescription": "Во оваа просторија се наоѓа калибратор за калибрирање на овошје и зеленчук кој е со капацитет од 5т на еден час. Калибраторот е со потекло од Грција.",
+  "packagingInProductsTitle": "МАШИНА ЗА ПАКУВАЊЕ ПРОИЗВОДИ - КУПАКИ",
+  "packagingInProductsDescription": "Во просторијата за калибрирање има помала машина која служи за пакување на производи во пластична амбалажа од 1 кг т.н. Купаки."
 }
