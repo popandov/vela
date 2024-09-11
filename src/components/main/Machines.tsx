@@ -66,7 +66,7 @@ const Machines = () => {
 
   return (
     <Tabs>
-      <Stack direction={{ base: 'column', lg: 'row' }} w='full' gap={{base: 2, lg: 5}}>
+      <Stack direction={{ base: 'column', lg: 'row' }} w='full' gap={{ base: 2, lg: 5 }}>
         <MainContentTitle
           icon={AiOutlineSetting}
           title={t('machines')}

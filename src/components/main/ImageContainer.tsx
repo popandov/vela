@@ -23,7 +23,15 @@ const ImageContainer = () => {
       <Image minW={0} minH={0} width='full' src={selectedImage} borderRadius='5px' />
       <HStack overflow='auto' w='full'>
         {smallerImages.map((item) => (
-          <Image minW={0} minH={0} key={item} w='full' src={item} onClick={() => handleImageClick(item)} borderRadius='5px' />
+          <Image
+            minW={0}
+            minH={0}
+            key={item}
+            w='full'
+            src={item}
+            onClick={() => handleImageClick(item)}
+            borderRadius='5px'
+          />
         ))}
       </HStack>
     </VStack>
