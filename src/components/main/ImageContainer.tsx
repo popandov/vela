@@ -21,7 +21,7 @@ const ImageContainer = () => {
   return (
     <VStack w='full'>
       <Image minW={0} minH={0} width='full' src={selectedImage} borderRadius='5px' />
-      <HStack overflow='auto' w={{base: '92vw', lg: '50vw'}}>
+      <HStack overflow='auto' w={{base: '90vw', lg: '50vw'}}>
         {smallerImages.map((item) => (
           <Image
             minW='131px'
