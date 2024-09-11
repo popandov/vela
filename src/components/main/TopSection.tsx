@@ -10,30 +10,34 @@ const TopSection = () => {
 
   return (
     <Stack
+      w='full'
       paddingX={2}
       marginBottom={50}
       alignItems='center'
       direction={{ base: 'column', lg: 'row' }}
       borderX={{ base: `10px solid ${red700}`, lg: `50px solid ${red700}` }}
     >
-      <VStack alignItems='start' paddingX={{ base: '0', lg: '4em' }} width={{ base: 'full', sm: 'full', lg: '40%' }}>
-        <Text
-          color='red.700'
-          fontWeight={400}
-          width={{ base: 'fit-content' }}
-          fontSize={{ base: '40px', lg: '60px' }}
-          lineHeight={{ base: '48px', lg: '72px' }}
-        >
-          {t('companyName').toUpperCase()}
-        </Text>
-        <Text
-          color='black'
-          fontWeight={400}
-          fontSize={{ base: '16px', lg: '20px' }}
-          lineHeight={{ base: '19px', lg: '24px' }}
-        >
-          {t('companyDescription')}
-        </Text>
+      <VStack w='full'>
+        <VStack alignItems='start' w='fit-content'>
+          <Text
+            color='red.700'
+            fontWeight={400}
+            fontSize={{ base: '40px', lg: '60px' }}
+            lineHeight={{ base: '48px', lg: '72px' }}
+            width={{ base: 'fit-content', lg: '300px' }}
+          >
+            {t('companyName').toUpperCase()}
+          </Text>
+          <Text
+            color='black'
+            fontWeight={400}
+            width={{ base: 'fit-content', lg: '400px' }}
+            fontSize={{ base: '16px', lg: '20px' }}
+            lineHeight={{ base: '19px', lg: '24px' }}
+          >
+            {t('companyDescription')}
+          </Text>
+        </VStack>
       </VStack>
       <ImageContainer />
     </Stack>

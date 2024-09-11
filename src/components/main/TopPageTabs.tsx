@@ -6,6 +6,8 @@ import ColdStorage from './ColdStorage';
 import Rooms from './Rooms';
 import Machines from './Machines';
 import OtherActivities from './OtherActivities';
+import GeneralInfo from './GeneralInfo';
+import Warehouse from './Warehouse';
 
 const sharedStyled: TabProps = {
   gap: 2,
@@ -46,14 +48,19 @@ const TopPageTabs = () => {
       </TabList>
       <TabPanels>
         <TabPanel bg='gray.200' borderRadius='5px'>
-          <VStack spacing={{ base: 9 }}>
+          <VStack spacing={{ base: 12 }}>
             <ColdStorage />
             <Rooms />
             <Machines />
             <OtherActivities />
           </VStack>
         </TabPanel>
-        <TabPanel>haha world</TabPanel>
+        <TabPanel bg='gray.200' borderRadius='5px'>
+          <VStack spacing={{ base: 9 }}>
+            <GeneralInfo />
+            <Warehouse />
+          </VStack>
+        </TabPanel>
       </TabPanels>
     </Tabs>
   );

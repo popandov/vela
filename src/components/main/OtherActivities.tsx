@@ -1,7 +1,7 @@
 import { BsSafe2 } from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
 import otherActivitiesImage from '/images/photo_other_activities_30.jpg';
-import { HStack, Text, Image, Stack, VStack } from '@chakra-ui/react';
+import { Text, Image, Stack, VStack } from '@chakra-ui/react';
 
 import MainContentTitle from './MainContentTitlte';
 
@@ -23,11 +23,11 @@ const OtherActivities = () => {
           justifyContent='center'
           alignItems='start'
           fontSize={{ base: '20px' }}
-          w={{base: 'full', lg: "60%"}}
+          w={{ base: 'full', lg: '60%' }}
           lineHeight={{ base: '24px' }}
         >
           <VStack alignItems='start' spacing={2}>
-            <Text fontWeight={700}>{t('forkliftsTitle')}</Text>
+            <Text fontWeight={700}>{t('forkliftsTitle').toUpperCase()}</Text>
             <Text fontSize={{ base: '16px' }} lineHeight={{ base: '22px' }}>
               {t('forkliftsDescription')}
             </Text>
@@ -39,9 +39,7 @@ const OtherActivities = () => {
             </Text>
           </VStack>
         </VStack>
-        <HStack w='full'>
-          <Image w='full' minW={0} minH={0} src={otherActivitiesImage} />
-        </HStack>
+        <Image w='full' minW={0} minH={0} src={otherActivitiesImage} />
       </Stack>
     </VStack>
   );

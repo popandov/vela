@@ -24,9 +24,14 @@ const ColdStorage = () => {
   const informationList = useMemo(() => getInformationList(t), [t]);
 
   return (
-    <VStack alignItems='flex-start'>
-      <MainContentTitle title={t('info')} icon={IoInformationCircleOutline} />
-      <Stack direction={{ base: 'column', lg: 'row' }} w='full'>
+    <VStack alignItems='flex-start' spacing={8}>
+      <MainContentTitle
+        title={t('info')}
+        fontSize={{ base: '22px' }}
+        lineHeight={{ base: '26px' }}
+        icon={IoInformationCircleOutline}
+      />
+      <Stack direction={{ base: 'column', lg: 'row' }} w='full' spacing={8}>
         <Image w='full' src={storageImage} minW={0} />
         <VStack
           color='black'
@@ -43,7 +48,7 @@ const ColdStorage = () => {
               {t('severalRooms')}
             </Text>
           </Text>
-          <VStack alignItems='start'>
+          <VStack alignItems='start' fontSize={{ base: '16px' }} lineHeight={{ base: '19px' }}>
             {informationList.map(({ description }) => (
               <HStack>
                 <Icon color='gray.500' as={FaRegCheckCircle} />
@@ -51,13 +56,30 @@ const ColdStorage = () => {
               </HStack>
             ))}
           </VStack>
-          <Text pl={{ base: 0, lg: '1.5em' }} textAlign={{ base: 'start' }}>
+          <Text
+            fontSize={{ base: '16px' }}
+            lineHeight={{ base: '19px' }}
+            pl={{ base: 0, lg: '1.5em' }}
+            textAlign={{ base: 'start' }}
+          >
             {t('totalAreaDescription')}
           </Text>
-          <Text fontWeight={700} pl={{ base: 0, lg: '1.5em' }} textAlign={{ base: 'start' }}>
+          <Text
+            fontSize={{ base: '16px' }}
+            lineHeight={{ base: '19px' }}
+            fontWeight={700}
+            pl={{ base: 0, lg: '1.5em' }}
+            textAlign={{ base: 'start' }}
+          >
             {t('yardDescription')}
           </Text>
-          <Text fontWeight={700} pl={{ base: 0, lg: '1.5em' }} textAlign={{ base: 'start' }}>
+          <Text
+            fontSize={{ base: '16px' }}
+            lineHeight={{ base: '19px' }}
+            fontWeight={700}
+            pl={{ base: 0, lg: '1.5em' }}
+            textAlign={{ base: 'start' }}
+          >
             {t('powerInBuildingDescription')}
           </Text>
         </VStack>

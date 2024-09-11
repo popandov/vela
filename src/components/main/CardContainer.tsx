@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { FaRegSnowflake } from 'react-icons/fa';
 import { HiOutlinePhone } from 'react-icons/hi';
 import { HiOutlineArchiveBox } from 'react-icons/hi2';
-import { Stack, VStack, Text } from '@chakra-ui/react';
+import { Stack, VStack, Text, Box, Link } from '@chakra-ui/react';
 
 import Card from './Card';
 
@@ -39,7 +39,9 @@ const getAllCards = (t: TFunction<'translation', undefined>): CardProps[] => [
           }}
         >
           <Text fontWeight={700}>{t('mobilePhoneOneLabel')}</Text>
-          <Text>{t('mobilePhoneOneContent')}</Text>
+          <Link href={`tel:${t('mobilePhoneOneContent')}`}>
+            <Text>{t('mobilePhoneOneContent')}</Text>
+          </Link>
         </Stack>
         <Stack
           direction={{
@@ -52,7 +54,9 @@ const getAllCards = (t: TFunction<'translation', undefined>): CardProps[] => [
           }}
         >
           <Text fontWeight={700}>{t('mobilePhoneTwoLabel')}</Text>
-          <Text>{t('mobilePhoneTwoContent')}</Text>
+          <Link href={`tel:${t('mobilePhoneTwoContent')}`}>
+            <Text>{t('mobilePhoneTwoContent')}</Text>
+          </Link>
         </Stack>
         <Stack
           direction={{
@@ -65,7 +69,9 @@ const getAllCards = (t: TFunction<'translation', undefined>): CardProps[] => [
           }}
         >
           <Text fontWeight={700}>{t('emailLabel')}</Text>
-          <Text>{t('emailContent')}</Text>
+          <Link href={`mailto:${t('emailContent')}`}>
+            <Text>{t('emailContent')}</Text>
+          </Link>
         </Stack>
       </VStack>
     ),
@@ -110,16 +116,18 @@ const CardContainer = () => {
   const cards = useMemo(() => getAllCards(t), [t]);
 
   return (
-    <Stack
-      w='full'
-      gap={{ base: '24px' }}
-      paddingX={{ base: '10px', lg: '50px' }}
-      direction={{ base: 'column', lg: 'row' }}
-    >
-      {cards.map((card) => (
-        <Card key={card.title} {...card} />
-      ))}
-    </Stack>
+    <Box py={10}>
+      <Stack
+        w='full'
+        gap={{ base: '24px' }}
+        paddingX={{ base: '10px', lg: '50px' }}
+        direction={{ base: 'column', lg: 'row' }}
+      >
+        {cards.map((card) => (
+          <Card key={card.title} {...card} />
+        ))}
+      </Stack>
+    </Box>
   );
 };
 

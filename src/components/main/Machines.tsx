@@ -16,7 +16,7 @@ const getMachineTabs = (t: TFunction<'translation', undefined>): string[] => [
 ];
 
 const getMachinePanels = (t: TFunction<'translation', undefined>): ReactNode[] => [
-  <Stack alignItems='center' w='full' direction={{ base: 'column', lg: 'row' }} spacing={{ base: 4 }}>
+  <Stack alignItems='center' w='full' direction={{ base: 'column', lg: 'row' }} spacing={{ base: 8 }}>
     <VStack alignItems='start' maxW={{ base: 'full', lg: '40%' }} h='full' spacing={{ base: 2 }}>
       <Text fontSize={{ base: '18px' }} lineHeight={{ base: '25px' }} fontWeight={{ base: 700 }} color='black'>
         {t('pureeProductionTitle')}
@@ -33,7 +33,7 @@ const getMachinePanels = (t: TFunction<'translation', undefined>): ReactNode[] =
     </VStack>
     <Image minW={0} minH={0} src={pureeProductionImage} />
   </Stack>,
-  <Stack alignItems='center' w='full' direction={{ base: 'column', lg: 'row' }} spacing={{ base: 4 }}>
+  <Stack alignItems='center' w='full' direction={{ base: 'column', lg: 'row' }} spacing={{ base: 8 }}>
     <VStack alignItems='start' maxW={{ base: 'full', lg: '40%' }} spacing={{ base: 2 }}>
       <Text fontSize={{ base: '18px' }} lineHeight={{ base: '25px' }} fontWeight={{ base: 700 }} color='black'>
         {t('calibratorTitle')}
@@ -44,7 +44,7 @@ const getMachinePanels = (t: TFunction<'translation', undefined>): ReactNode[] =
     </VStack>
     <Image minW={0} minH={0} src={calibratorImage} />
   </Stack>,
-  <Stack alignItems='center' w='full' direction={{ base: 'column-reverse', lg: 'row' }} spacing={{ base: 4 }}>
+  <Stack alignItems='center' w='full' direction={{ base: 'column-reverse', lg: 'row' }} spacing={{ base: 8 }}>
     <Image minW={0} minH={0} src={packagingInProductsImage} />
     <VStack alignItems='start' maxW={{ base: 'full', lg: '40%' }} spacing={{ base: 2 }}>
       <Text fontSize={{ base: '18px' }} lineHeight={{ base: '25px' }} fontWeight={{ base: 700 }} color='black'>

@@ -2,7 +2,7 @@ import i18next from 'i18next';
 import { TfiWorld } from 'react-icons/tfi';
 import { HiOutlinePhone } from 'react-icons/hi';
 import { MdKeyboardArrowDown } from 'react-icons/md';
-import { Button, HStack, Image } from '@chakra-ui/react';
+import { Button, HStack, Image, Link } from '@chakra-ui/react';
 
 import logoImage from '/images/logo_last.png';
 import Select from '../shared/Select';
@@ -38,7 +38,7 @@ const Header = () => {
           width={{ base: '100px', lg: '120px' }}
           size={{ xs: 'xs', base: 'sm', lg: 'md' }}
         >
-          {t('contact')}
+          <Link href={`tel:${t('mobilePhoneOneContent')}`}>{t('contact')}</Link>
         </Button>
         <Select
           options={languageOptions}

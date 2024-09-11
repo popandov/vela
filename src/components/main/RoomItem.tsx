@@ -30,7 +30,7 @@ const RoomItem = ({ content, images, title, isCurrentItemSelected }: Props) => {
         <Icon color={isCurrentItemSelected ? 'black' : 'gray.500'} as={isCurrentItemSelected ? FaMinus : FaPlus} />
       </AccordionButton>
       <AccordionPanel>
-        <VStack gap={{ base: '12px' }}>
+        <VStack gap={{ base: '12px' }} spacing={8}>
           {content}
           {isMobile && images}
         </VStack>

@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { Accordion, VStack, Text, HStack, Image, Stack } from '@chakra-ui/react';
 
 import RoomItem from './RoomItem';
+import useIsMobile from '../../hooks/is-mobile';
 import MainContentTitle from './MainContentTitlte';
 import officesImage from '/images/photo_offices_17.jpg';
 import otherRoomsImage from '/images/photo_other_rooms_07.jpg';
@@ -15,7 +16,6 @@ import vegetablesTwo from '/images/photo_rooms_for_vegetables_12.jpg';
 import vegetablesThree from '/images/photo_rooms_for_vegetables_13.jpg';
 import calibrationRoomOne from '/images/photo_calibration_room_16.jpg';
 import calibrationRoomTwo from '/images/photo_calibration_room_15.jpg';
-import useIsMobile from '../../hooks/is-mobile';
 
 type RoomItemProps = {
   title: string;
@@ -29,10 +29,10 @@ const getItems = (t: TFunction<'translation', undefined>): RoomItemProps[] => [
     content: (
       <VStack
         w='full'
-        fontSize={{ base: '12px' }}
         fontWeight={{ base: 400 }}
-        lineHeight={{ base: '17px' }}
         alignItems={{ base: 'start' }}
+        fontSize={{ base: '16px' }}
+        lineHeight={{ base: '19px' }}
       >
         <Text>
           {t('eachChamberIsEquipped')}{' '}
@@ -61,9 +61,9 @@ const getItems = (t: TFunction<'translation', undefined>): RoomItemProps[] => [
       <VStack
         w='full'
         alignItems='start'
-        fontSize={{ base: '12px' }}
         fontWeight={{ base: 400 }}
-        lineHeight={{ base: '17px' }}
+        fontSize={{ base: '16px' }}
+        lineHeight={{ base: '19px' }}
       >
         <Text>{t('theFollowingRoomHasTheDimensions')}</Text>
         <Text>{t('fruitsAndVegetablesDimensions')}</Text>
@@ -106,9 +106,9 @@ const getItems = (t: TFunction<'translation', undefined>): RoomItemProps[] => [
       <VStack
         w='full'
         alignItems='start'
-        fontSize={{ base: '12px' }}
         fontWeight={{ base: 400 }}
-        lineHeight={{ base: '17px' }}
+        fontSize={{ base: '16px' }}
+        lineHeight={{ base: '19px' }}
       >
         <Text>{t('theFollowingRoomHasTheDimensions')}</Text>
         <Text>{t('callibrationRoomDimensions')}</Text>
@@ -139,11 +139,11 @@ const getItems = (t: TFunction<'translation', undefined>): RoomItemProps[] => [
     title: t('offices'),
     content: (
       <VStack
-        alignItems='start'
         w='full'
-        fontSize={{ base: '12px' }}
+        alignItems='start'
         fontWeight={{ base: 400 }}
-        lineHeight={{ base: '17px' }}
+        fontSize={{ base: '16px' }}
+        lineHeight={{ base: '19px' }}
       >
         <Text>{t('theFollowingRoomHasTheDimensions')}</Text>
         <Text>{t('officesDimensionsOne')}</Text>
@@ -152,12 +152,12 @@ const getItems = (t: TFunction<'translation', undefined>): RoomItemProps[] => [
     ),
     images: (
       <Image
-        maxH={{ base: 'auto', lg: '500px' }}
         h='full'
-        maxW={{ base: 'aut', lg: '50%' }}
-        w={{ base: 'auto', lg: 'full' }}
         minW={0}
         src={officesImage}
+        maxH={{ base: 'auto', lg: '500px' }}
+        maxW={{ base: 'aut', lg: '50%' }}
+        w={{ base: 'auto', lg: 'full' }}
       />
     ),
   },
@@ -165,11 +165,11 @@ const getItems = (t: TFunction<'translation', undefined>): RoomItemProps[] => [
     title: t('otherRooms'),
     content: (
       <VStack
-        alignItems='start'
         w='full'
-        fontSize={{ base: '12px' }}
+        alignItems='start'
+        fontSize={{ base: '16px' }}
+        lineHeight={{ base: '19px' }}
         fontWeight={{ base: 400 }}
-        lineHeight={{ base: '17px' }}
       >
         <Text>{t('goodsReception')}</Text>
         <Text>{t('storageSpace')}</Text>
@@ -180,6 +180,7 @@ const getItems = (t: TFunction<'translation', undefined>): RoomItemProps[] => [
     images: (
       <Image
         h='full'
+        minW={0}
         src={otherRoomsImage}
         w={{ base: 'auto', lg: 'full' }}
         maxW={{ base: 'auto', lg: '50%' }}
@@ -201,13 +202,8 @@ const Rooms = () => {
 
   return (
     <VStack w='full' alignItems='start'>
-      <MainContentTitle
-        icon={BiMapAlt}
-        title={t('rooms')}
-        fontSize={{ base: '22px' }}
-        lineHeight={{ base: '26px' }}
-      />
-      <Stack direction={{ base: 'column', lg: 'row' }} w='full'>
+      <MainContentTitle icon={BiMapAlt} title={t('rooms')} fontSize={{ base: '22px' }} lineHeight={{ base: '26px' }} />
+      <Stack direction={{ base: 'column', lg: 'row' }} w='full' spacing={8}>
         <Accordion onChange={(item) => setSelectedIndex(item as number)} defaultIndex={0} w='full'>
           {items.map((room, index) => (
             <RoomItem key={room.title} {...room} isCurrentItemSelected={selectedIndex === index} />

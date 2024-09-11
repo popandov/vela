@@ -67,5 +67,18 @@
   "forkliftsTitle": "виљушкари",
   "forkliftsDescription": "Објектот располага со 11 виљушкари од кои 3 електрични со носивост од 2т, 7 рачни и 1 електричен рачен со носивост од 1т.",
   "scaleTitle": "вага",
-  "scaleDescription": "Вага од 2т."
+  "scaleDescription": "Вага од 2т.",
+  "generalInfoTitle": "инфо",
+  "generalInfoParagraphOne": "Локацијата се наоѓа на у.Западен булевар бр.41 во Индустриската зона во Кавадарци од десна страна после бензиска пумпа на Мак. петрол.",
+  "generalInfoParagraphTwo": "Хала од ",
+  "generalInfoParagraphThree": "челична конструкција без внатрешни столбови, ",
+  "generalInfoParagraphFour": "со можност за поставување на 12 тонски кран низ цела должина.",
+  "generalInfoParagraphFive": "Објектот е со приклучок за вода, канализација и струја",
+  "generalInfoParagraphSix": "Има ",
+  "generalInfoParagraphSeven": "дворно место",
+  "generalInfoParagraphEight": "од 3000м2.",
+  "dimensions": "Димензии:",
+  "warehouseDimensionsDescriptionOne": "25мх54мх8м=10800м3 или 1350м2",
+  "warehouseDimensionDescriptionTwo": "дворно место 3000м2",
+  "totalWarehouseDimensions": "Вкупно: 4350м2"
 }

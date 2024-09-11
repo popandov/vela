@@ -67,5 +67,18 @@
   "forkliftsTitle": "FORKLIFTS",
   "forkliftsDescription": "The facility has 11 forklifts, including 3 electric ones with a capacity of 2 tons, 7 manual ones, and 1 electric manual one with a capacity of 1 ton.",
   "scaleTitle": "scale",
-  "scaleDescription": "A scale with capaciy of 2 tons."
+  "scaleDescription": "A scale with capaciy of 2 tons.",
+  "generalInfoTitle": "General info",
+  "generalInfoParagraphOne": "The warehouse is located location is on Zapaden Bulevar No.41 in the Industrial Zone of Kavadarci, more precisely on the right side of the road after Makpetrol petrol station.",
+  "generalInfoParagraphTwo": "Build with a ",
+  "generalInfoParagraphThree": "steel construction without internal columns, ",
+  "generalInfoParagraphFour": "with the possibility of installing a 12 tons crane along its entire length.",
+  "generalInfoParagraphFive": "The facility is equipped with water, sewage, and electricity connections.",
+  "generalInfoParagraphSix": "It has a ",
+  "generalInfoParagraphSeven": "courtyard area ",
+  "generalInfoParagraphEight": "of 3000 m2.",
+  "dimensions": "Dimensions:",
+  "warehouseDimensionsDescriptionOne": "25m х 54m х 8m=10800m3 or 1350m2",
+  "warehouseDimensionDescriptionTwo": "courtyard area 3000m2",
+  "totalWarehouseDimensions": "Total: 4350m2"
 }
