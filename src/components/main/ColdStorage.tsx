@@ -36,7 +36,7 @@ const ColdStorage = () => {
         />
       )}
       <Stack direction={{ base: 'column', lg: 'row' }} w='full' spacing={8}>
-        <Image w='full' src={storageImage} minW={0} />
+        <Image w='full' src={storageImage} minW={0} borderRadius='5px' />
         <VStack
           color='black'
           gap={{ base: 4 }}

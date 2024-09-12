@@ -39,7 +39,7 @@ const OtherActivities = () => {
             </Text>
           </VStack>
         </VStack>
-        <Image w='full' minW={0} minH={0} src={otherActivitiesImage} />
+        <Image w='full' minW={0} minH={0} src={otherActivitiesImage} borderRadius='5px' />
       </Stack>
     </VStack>
   );

@@ -31,7 +31,7 @@ const getMachinePanels = (t: TFunction<'translation', undefined>): ReactNode[] =
         </Text>
       </Box>
     </VStack>
-    <Image minW={0} minH={0} src={pureeProductionImage} />
+    <Image minW={0} minH={0} src={pureeProductionImage} borderRadius='5px' />
   </Stack>,
   <Stack alignItems='center' w='full' direction={{ base: 'column', lg: 'row' }} spacing={{ base: 8 }}>
     <VStack alignItems='start' maxW={{ base: 'full', lg: '40%' }} spacing={{ base: 2 }}>
@@ -42,10 +42,10 @@ const getMachinePanels = (t: TFunction<'translation', undefined>): ReactNode[] =
         {t('calibratorDescription')}
       </Text>
     </VStack>
-    <Image minW={0} minH={0} src={calibratorImage} />
+    <Image minW={0} minH={0} src={calibratorImage} borderRadius='5px' />
   </Stack>,
   <Stack alignItems='center' w='full' direction={{ base: 'column-reverse', lg: 'row' }} spacing={{ base: 8 }}>
-    <Image minW={0} minH={0} src={packagingInProductsImage} />
+    <Image minW={0} minH={0} src={packagingInProductsImage} borderRadius='5px' />
     <VStack alignItems='start' maxW={{ base: 'full', lg: '40%' }} spacing={{ base: 2 }}>
       <Text fontSize={{ base: '18px' }} lineHeight={{ base: '25px' }} fontWeight={{ base: 700 }} color='black'>
         {t('packagingInProductsTitle')}

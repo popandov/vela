@@ -23,7 +23,7 @@ const Warehouse = () => {
         </VStack>
         <Text fontWeight={{ base: 700 }}>{t('totalWarehouseDimensions')}</Text>
       </VStack>
-      <Image minW={0} minH={0} src={warehouseImage} />
+      <Image minW={0} minH={0} src={warehouseImage} borderRadius='5px' />
     </Stack>
   );
 };

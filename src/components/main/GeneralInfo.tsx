@@ -10,7 +10,7 @@ const GeneralInfo = () => {
 
   return (
     <Stack direction={{ base: 'column-reverse', lg: 'row' }} w='full' spacing={8}>
-      <Image minW={0} minH={0} w='full' src={generalInfoImage} />
+      <Image minW={0} minH={0} w='full' src={generalInfoImage} borderRadius='5px' />
       <VStack w='full' alignItems='start' spacing={4}>
         <MainContentTitle
           fontSize={{ base: '22px' }}

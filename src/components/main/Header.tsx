@@ -31,7 +31,7 @@ const Header = () => {
       paddingY={{ base: 3, lg: 5 }}
       paddingX={{ base: '10px', lg: '50px' }}
     >
-      <Image src={logoImage} height={{ base: '55px', lg: 'fit-content' }} />
+      <Image src={logoImage} height={{ base: '55px', lg: 'fit-content' }} borderRadius='5px' />
       <HStack>
         <Button
           leftIcon={<HiOutlinePhone />}

@@ -50,8 +50,8 @@ const getItems = (t: TFunction<'translation', undefined>): RoomItemProps[] => [
     ),
     images: (
       <HStack w={{ base: 'auto', lg: 'full' }} maxH={{ base: 'auto', lg: '500px' }} maxW={{ base: 'auto', lg: '50%' }}>
-        <Image h='full' w={{ base: 'auto', lg: 'full' }} minH={0} minW={0} src={coolingChamberOne} />
-        <Image h='full' w={{ base: 'auto', lg: 'full' }} minH={0} minW={0} src={coolingChamberTwo} />
+        <Image h='full' w={{ base: 'auto', lg: 'full' }} minH={0} minW={0} src={coolingChamberOne} borderRadius='5px' />
+        <Image h='full' w={{ base: 'auto', lg: 'full' }} minH={0} minW={0} src={coolingChamberTwo} borderRadius='5px' />
       </HStack>
     ),
   },
@@ -75,6 +75,7 @@ const getItems = (t: TFunction<'translation', undefined>): RoomItemProps[] => [
           h='full'
           minH={0}
           minW={0}
+          borderRadius='5px'
           src={vegetablesOne}
           w={{ base: 'auto', lg: 'full' }}
           maxH={{ base: 'auto', lg: '250px' }}
@@ -85,6 +86,7 @@ const getItems = (t: TFunction<'translation', undefined>): RoomItemProps[] => [
             minH={0}
             minW={0}
             src={vegetablesTwo}
+             borderRadius='5px'
             w={{ base: 'auto', lg: 'full' }}
             maxH={{ base: 'auto', lg: '250px' }}
           />
@@ -92,6 +94,7 @@ const getItems = (t: TFunction<'translation', undefined>): RoomItemProps[] => [
             h='full'
             minH={0}
             minW={0}
+            borderRadius='5px'
             src={vegetablesThree}
             w={{ base: 'auto', lg: 'full' }}
             maxH={{ base: 'auto', lg: '250px' }}
@@ -119,6 +122,7 @@ const getItems = (t: TFunction<'translation', undefined>): RoomItemProps[] => [
         <Image
           minH={0}
           minW={0}
+          borderRadius='5px'
           src={calibrationRoomOne}
           h={{ base: 'auto', lg: '500px' }}
           w={{ base: 'auto', lg: 'full' }}
@@ -128,6 +132,7 @@ const getItems = (t: TFunction<'translation', undefined>): RoomItemProps[] => [
           h='full'
           minH={0}
           minW={0}
+          borderRadius='5px'
           src={calibrationRoomTwo}
           w={{ base: 'auto', lg: 'full' }}
           maxH={{ base: 'auto', lg: '500px' }}
@@ -155,6 +160,7 @@ const getItems = (t: TFunction<'translation', undefined>): RoomItemProps[] => [
         h='full'
         minW={0}
         src={officesImage}
+        borderRadius='5px'
         maxH={{ base: 'auto', lg: '500px' }}
         maxW={{ base: 'aut', lg: '50%' }}
         w={{ base: 'auto', lg: 'full' }}
@@ -181,6 +187,7 @@ const getItems = (t: TFunction<'translation', undefined>): RoomItemProps[] => [
       <Image
         h='full'
         minW={0}
+        borderRadius='5px'
         src={otherRoomsImage}
         w={{ base: 'auto', lg: 'full' }}
         maxW={{ base: 'auto', lg: '50%' }}
