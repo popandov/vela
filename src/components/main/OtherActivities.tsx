@@ -1,7 +1,8 @@
 import { BsSafe2 } from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
 import otherActivitiesImage from '/images/photo_other_activities_30.jpg';
-import { Text, Image, Stack, VStack } from '@chakra-ui/react';
+import otherActivitiesImage1 from '/images/photo_other_activities_31.jpg';
+import { Text, Image, Stack, VStack, HStack } from '@chakra-ui/react';
 
 import MainContentTitle from './MainContentTitlte';
 
@@ -39,7 +40,11 @@ const OtherActivities = () => {
             </Text>
           </VStack>
         </VStack>
-        <Image w='full' minW={0} minH={0} src={otherActivitiesImage} borderRadius='5px' />
+        <HStack w={{ base: 'auto', lg: 'full' }} maxH={{ base: 'auto', lg: '500px' }} maxW={{ base: 'auto', lg: '50%' }}>
+          <Image h='full' w={{ base: 'auto', lg: 'full' }} minH={0} minW={0} src={otherActivitiesImage} borderRadius='5px' />
+          <Image h='full' w={{ base: 'auto', lg: 'full' }} minH={0} minW={0} src={otherActivitiesImage1} borderRadius='5px' />
+        </HStack>
+        {/* <Image w='full' minW={0} minH={0} src={otherActivitiesImage} borderRadius='5px' /> */}
       </Stack>
     </VStack>
   );
